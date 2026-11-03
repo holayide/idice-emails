@@ -1,17 +1,38 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no"
+    />
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
     <title>iDICE — Cohort rollover notice</title>
     <!--[if mso]>
-    <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
-    <style>td,p,a,span{font-family:"Times New Roman",Times,serif !important;}</style>
+      <noscript
+        ><xml
+          ><o:OfficeDocumentSettings
+            ><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings
+          ></xml
+        ></noscript
+      >
+      <style>
+        td,
+        p,
+        a,
+        span {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+      </style>
     <![endif]-->
     <!--
       BACKEND NOTES
@@ -22,131 +43,3266 @@
         phones in clients that support media queries. All other styling is inline.
       - Keep the sent HTML under ~100KB or Gmail clips it ("[Message clipped]").
     -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
     <style>
-      :root { color-scheme: light only; supported-color-schemes: light; }
-      html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
-      * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
-      table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; }
-      img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-      a { text-decoration: none; }
-      a[x-apple-data-detectors], .unstyle-auto-link a { color: inherit !important; text-decoration: none !important; font-weight: inherit !important; }
-      #MessageViewBody a { color: inherit; text-decoration: none; }
+      :root {
+        color-scheme: light only;
+        supported-color-schemes: light;
+      }
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+      }
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        border-collapse: collapse !important;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      a[x-apple-data-detectors],
+      .unstyle-auto-link a {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-weight: inherit !important;
+      }
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+      }
       @media only screen and (max-width: 620px) {
-        .page-gutter { padding: 0 0 12px 0 !important; }
-        .container { width: 100% !important; max-width: 100% !important; border-radius: 0 !important; }
-        .px { padding-left: 16px !important; padding-right: 16px !important; }
-        .hello { font-size: 22px !important; line-height: 28px !important; }
-        .stack { display: block !important; width: 100% !important; max-width: 100% !important; }
-        .stack-right { text-align: left !important; padding-top: 12px !important; padding-left: 0 !important; }
-        .right-float { float: none !important; }
-        .hero-title { font-size: 24px !important; line-height: 30px !important; }
-        .cta-link { padding: 13px 22px !important; font-size: 14px !important; }
-        .partner-name { font-size: 11px !important; line-height: 14px !important; }
-        .partner-role { font-size: 10px !important; line-height: 13px !important; }
+        .page-gutter {
+          padding: 0 0 12px 0 !important;
+        }
+        .container {
+          width: 100% !important;
+          max-width: 100% !important;
+          border-radius: 0 !important;
+        }
+        .px {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .hello {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .pathway-cell {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+          padding: 0 0 8px 0 !important;
+          box-sizing: border-box !important;
+        }
+        .pathway-gap {
+          display: none !important;
+          width: 0 !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+          font-size: 0 !important;
+          line-height: 0 !important;
+        }
+        .stack-right {
+          text-align: left !important;
+          padding-top: 12px !important;
+          padding-left: 0 !important;
+        }
+        .right-float {
+          float: none !important;
+        }
+        .hero-title {
+          font-size: 24px !important;
+          line-height: 30px !important;
+        }
+        .cta-link {
+          padding: 13px 22px !important;
+          font-size: 14px !important;
+        }
+        .partner-name {
+          font-size: 11px !important;
+          line-height: 14px !important;
+        }
+        .partner-role {
+          font-size: 10px !important;
+          line-height: 13px !important;
+        }
       }
     </style>
   </head>
 
-  <body style="margin: 0; padding: 0; background-color: #ffffff; width: 100%">
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      width: 100%;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+    "
+  >
     <!-- EDIT: inbox preview text. Keep it under ~90 characters. -->
-    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; color: #ffffff">
-      Your place is protected. Your profile is moving to Cohort 5 (Q1 2027). Choose a pathway by 14 Nov.
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        color: #ffffff;
+      "
+    >
+      Your place is protected. Your profile is moving to Cohort 5 (Q1 2027).
+      Choose a pathway by 14 Nov.
     </div>
-    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all">
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+      "
+    >
       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
     </div>
 
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; width: 100%">
+    <table
+      role="presentation"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      bgcolor="#FFFFFF"
+      style="background-color: #ffffff; width: 100%"
+    >
       <tr>
         <td class="page-gutter" align="center" style="padding: 24px 12px">
           <!--[if mso]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="640"><tr><td><![endif]-->
-          <table role="presentation" class="container" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="width: 100%; max-width: 640px; background-color: #ffffff; border-radius: 18px; box-shadow: 0px 2px 4px -2px #e5e1ea, 0px 4px 6px -1px #e5e1ea">
+          <table
+            role="presentation"
+            class="container"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            bgcolor="#FFFFFF"
+            style="
+              width: 100%;
+              max-width: 640px;
+              background-color: #ffffff;
+              border-radius: 18px;
+              box-shadow:
+                0px 2px 4px -2px #e5e1ea,
+                0px 4px 6px -1px #e5e1ea;
+            "
+          >
             <tr>
-              <td style="font-size: 0; line-height: 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="25%" bgcolor="#8F4900" height="6" style="width: 25%; height: 6px; background-color: #8f4900; font-size: 0; line-height: 6px; mso-line-height-rule: exactly; border-radius: 18px 0 0 0;">&nbsp;</td><td width="75%" bgcolor="#692FE5" height="6" style="width: 75%; height: 6px; background-color: #692fe5; font-size: 0; line-height: 6px; mso-line-height-rule: exactly; border-radius: 0 18px 0 0;">&nbsp;</td></tr></table></td>
+              <td style="font-size: 0; line-height: 0">
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="table-layout: fixed"
+                >
+                  <tr>
+                    <td
+                      width="25%"
+                      bgcolor="#8F4900"
+                      height="6"
+                      style="
+                        width: 25%;
+                        height: 6px;
+                        background-color: #8f4900;
+                        font-size: 0;
+                        line-height: 6px;
+                        mso-line-height-rule: exactly;
+                        border-radius: 18px 0 0 0;
+                      "
+                    >
+                      &nbsp;
+                    </td>
+                    <td
+                      width="75%"
+                      bgcolor="#692FE5"
+                      height="6"
+                      style="
+                        width: 75%;
+                        height: 6px;
+                        background-color: #692fe5;
+                        font-size: 0;
+                        line-height: 6px;
+                        mso-line-height-rule: exactly;
+                        border-radius: 0 18px 0 0;
+                      "
+                    >
+                      &nbsp;
+                    </td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <!-- ===================== HEADER ===================== -->
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 22px 24px; font-size: 0">
-                <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="592"><tr><td width="392" valign="middle"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 392px; vertical-align: middle"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="50" style="width: 50px"><img src="img/icon-tile-shield-white.png" width="40" height="40" alt="iDICE" border="0" style="display: block; width: 40px; height: 40px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #692fe5; letter-spacing: 0.7px;">FEDERAL REPUBLIC OF NIGERIA &bull; FMCIDE &bull; AFDB &bull; BOI</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 17px; line-height: 22px; font-weight: bold; color: #1d1a24;">iDICE Programme Directorate</p><p style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 16px; color: #494455;">North Central Zone &bull; FCT, Plateau, Benue, Nasarawa, Niger, Kogi, Kwara</p></td></tr></table></div><!--[if mso]></td><td width="200" valign="middle" align="right"><![endif]--><div class="stack stack-right" style="display: inline-block; width: 100%; max-width: 200px; vertical-align: middle; text-align: right"><!-- EDIT: status and reference --><table class="right-float" role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#FBE3D0" style="background-color: #fbe3d0; border-radius: 999px; padding: 5px 12px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #3d2a1c;"><span style="color: #8f4900">&#9679;</span>&nbsp; Cohort Status: Rollover Transition</td></tr></table><p style="clear: both; margin: 0; padding-top: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; letter-spacing: 0.3px; color: #494455; text-align: right">REF: NC-ROLL-2026-0118</p></div><!--[if mso]></td></tr></table><![endif]-->
+              <td
+                class="px"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 22px 24px;
+                  font-size: 0;
+                "
+              >
+                <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="592"><tr><td width="392" valign="middle"><![endif]-->
+                <div
+                  class="stack"
+                  style="
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 392px;
+                    vertical-align: middle;
+                  "
+                >
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td valign="middle" width="50" style="width: 50px">
+                        <img
+                          src="img/icon-tile-shield-white.png"
+                          width="40"
+                          height="40"
+                          alt="iDICE"
+                          border="0"
+                          style="
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            border: 0;
+                          "
+                        />
+                      </td>
+                      <td
+                        valign="middle"
+                        style="font-family: Inter, Arial, Helvetica, sans-serif"
+                      >
+                        <p
+                          style="
+                            margin: 0px 0 0 0;
+                            font-family: Inter, Arial, Helvetica, sans-serif;
+                            font-size: 10px;
+                            line-height: 14px;
+                            font-weight: 600;
+                            color: #692fe5;
+                            letter-spacing: 0.7px;
+                          "
+                        >
+                          FEDERAL REPUBLIC OF NIGERIA &bull; FMCIDE &bull; AFDB
+                          &bull; BOI
+                        </p>
+                        <p
+                          style="
+                            margin: 2px 0 0 0;
+                            font-family: Inter, Arial, Helvetica, sans-serif;
+                            font-size: 17px;
+                            line-height: 22px;
+                            font-weight: 600;
+                            color: #1d1a24;
+                          "
+                        >
+                          iDICE Programme Directorate
+                        </p>
+                        <p
+                          style="
+                            margin: 1px 0 0 0;
+                            font-family: Inter, Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #494455;
+                          "
+                        >
+                          North Central Zone &bull; FCT, Plateau, Benue,
+                          Nasarawa, Niger, Kogi, Kwara
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if mso]></td><td width="200" valign="middle" align="right"><![endif]-->
+                <div
+                  class="stack stack-right"
+                  style="
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 200px;
+                    vertical-align: middle;
+                    text-align: right;
+                  "
+                >
+                  <!-- EDIT: status and reference -->
+                  <table
+                    class="right-float"
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    align="right"
+                  >
+                    <tr>
+                      <td
+                        bgcolor="#FBE3D0"
+                        style="
+                          background-color: #fbe3d0;
+                          border-radius: 999px;
+                          padding: 5px 12px;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          line-height: 14px;
+                          font-weight: 600;
+                          color: #3d2a1c;
+                        "
+                      >
+                        <span style="color: #8f4900">&#9679;</span>&nbsp; Cohort
+                        Status: Rollover Transition
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      clear: both;
+                      margin: 0;
+                      padding-top: 8px;
+                      font-family: Inter, Arial, Helvetica, sans-serif;
+                      font-size: 10px;
+                      line-height: 14px;
+                      letter-spacing: 0.3px;
+                      color: #494455;
+                      text-align: right;
+                    "
+                  >
+                    REF: NC-ROLL-2026-0118
+                  </p>
+                </div>
+                <!--[if mso]></td></tr></table><![endif]-->
               </td>
             </tr>
             <!-- EDIT: recipient first name -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 26px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p class="hello" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 20px; line-height: 26px; font-weight: bold; color: #1a191e;">Hello Amina,</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 26px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  class="hello"
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    color: #1a191e;
+                  "
+                >
+                  Hello Amina,
+                </p>
               </td>
             </tr>
             <!-- EDIT: cohort -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 23px; color: #3a3642;">We are writing to notify you regarding your current standing in the <strong style="font-weight: bold; color: #692fe5">iDICE Skills-to-Jobs Programme</strong>. Our automated LMS telemetry and the Regional Academic Oversight Board have flagged that required checkpoint submissions and interactive lab sessions for <strong style="font-weight: bold; color: #1d1a24">Cohort 4 (Q4 2026)</strong> have remained inactive past the formal extension grace window.</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 8px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #3a3642;
+                  "
+                >
+                  We are writing to notify you regarding your current standing
+                  in the
+                  <strong style="font-weight: 600; color: #692fe5"
+                    >iDICE Skills-to-Jobs Programme</strong
+                  >. Our automated LMS telemetry and the Regional Academic
+                  Oversight Board have flagged that required checkpoint
+                  submissions and interactive lab sessions for
+                  <strong style="font-weight: 600; color: #1d1a24"
+                    >Cohort 4 (Q4 2026)</strong
+                  >
+                  have remained inactive past the formal extension grace window.
+                </p>
               </td>
             </tr>
             <!-- Explainer -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 24px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FDF1E8" style="background-color: #fdf1e8; border-radius: 12px;"><tr><td style="padding: 18px 18px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="48" style="width: 48px"><img src="img/icon-rollover.png" width="36" height="36" alt="" border="0" style="display: block; width: 36px; height: 36px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #5a2d00;">What is Happening: Cohort Rollover (Not Disqualification)</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #3d2a1c;">Your place in the iDICE national digital economy initiative remains <strong style="font-weight: bold; color: #692fe5">fully protected</strong>. Rather than forfeiting your federal sponsorship and allocated cloud compute benefits, your participant profile is being safely transferred (rolled over) to the upcoming <strong style="font-weight: bold; color: #1d1a24">Cohort 5 (Q1 2027) cycle</strong>.</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 24px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#FDF1E8"
+                  style="background-color: #fdf1e8; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 18px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td valign="top" width="48" style="width: 48px">
+                            <img
+                              src="img/icon-rollover.png"
+                              width="36"
+                              height="36"
+                              alt=""
+                              border="0"
+                              style="
+                                display: block;
+                                width: 36px;
+                                height: 36px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="top"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: 600;
+                                color: #5a2d00;
+                              "
+                            >
+                              What is Happening: Cohort Rollover (Not
+                              Disqualification)
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #3d2a1c;
+                              "
+                            >
+                              Your place in the iDICE national digital economy
+                              initiative remains
+                              <strong style="font-weight: 600; color: #692fe5"
+                                >fully protected</strong
+                              >. Rather than forfeiting your federal sponsorship
+                              and allocated cloud compute benefits, your
+                              participant profile is being safely transferred
+                              (rolled over) to the upcoming
+                              <strong style="font-weight: 600; color: #1d1a24"
+                                >Cohort 5 (Q1 2027) cycle</strong
+                              >.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Audit record. EDIT: cohorts and dates -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px;"><tr><td style="padding: 18px 17px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #494455; letter-spacing: 0.7px;">ACADEMIC TELEMETRY AUDIT RECORD</p></td><td valign="middle" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 10px; line-height: 14px; color: #8a8494">ID: 8812-NC</p></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><![endif]--><!--[if mso]><td width="184" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 184px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 3px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 12px 12px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Previous Cohort Assignment</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 16px; line-height: 21px; font-weight: bold; color: #1d1a24;">Cohort 4</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 15px; color: #494455;">Active Term: Oct – Dec 2026</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="184" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 184px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 3px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 12px 12px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #b3261e;">Inactivity Milestone</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 16px; line-height: 21px; font-weight: bold; color: #1d1a24;">Milestone 6</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 15px; color: #494455;">Lab 1 &amp; Clinic Unsubmitted</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="184" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 184px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 3px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 12px 12px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #692fe5;">New Allocated Cohort</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 16px; line-height: 21px; font-weight: bold; color: #692fe5;">Cohort 5 – Stream B</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 15px; color: #494455;">Start: 15 January 2027</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 17px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            valign="middle"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 600;
+                                color: #494455;
+                                letter-spacing: 0.7px;
+                              "
+                            >
+                              ACADEMIC TELEMETRY AUDIT RECORD
+                            </p>
+                          </td>
+                          <td
+                            valign="middle"
+                            align="right"
+                            style="
+                              padding-left: 8px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #8a8494;
+                              "
+                            >
+                              ID: 8812-NC
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            height="10"
+                            style="height: 10px; font-size: 0; line-height: 0"
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td style="font-size: 0; text-align: left">
+                            <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><!
+                            [endif]-->[endif]--><!--[if mso]><td width="184" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 184px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 3px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      bgcolor="#FFFFFF"
+                                      style="
+                                        background-color: #ffffff;
+                                        border-radius: 8px;
+                                      "
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            padding: 12px 12px;
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Previous Cohort Assignment
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 4px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 16px;
+                                              line-height: 21px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Cohort 4
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 15px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Active Term: Oct – Dec 2026
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]><td width="184" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 184px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 3px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      bgcolor="#FFFFFF"
+                                      style="
+                                        background-color: #ffffff;
+                                        border-radius: 8px;
+                                      "
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            padding: 12px 12px;
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #b3261e;
+                                            "
+                                          >
+                                            Inactivity Milestone
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 4px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 16px;
+                                              line-height: 21px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Milestone 6
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 15px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Lab 1 &amp; Clinic Unsubmitted
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]><td width="184" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 184px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 3px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      bgcolor="#FFFFFF"
+                                      style="
+                                        background-color: #ffffff;
+                                        border-radius: 8px;
+                                      "
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            padding: 12px 12px;
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            text-align: left;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #692fe5;
+                                            "
+                                          >
+                                            New Allocated Cohort
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 4px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 16px;
+                                              line-height: 21px;
+                                              font-weight: 600;
+                                              color: #692fe5;
+                                            "
+                                          >
+                                            Cohort 5 – Stream B
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 15px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Start: 15 January 2027
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 26px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="26" style="width: 26px"><img src="img/icon-shield-small.png" width="18" height="18" alt="" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 17px; line-height: 22px; font-weight: bold; color: #1d1a24;">Preserved Entitlements &amp; Retained Sovereign Assets</p></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 26px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td valign="middle" width="26" style="width: 26px">
+                      <img
+                        src="img/icon-shield-small.png"
+                        width="18"
+                        height="18"
+                        alt=""
+                        border="0"
+                        style="
+                          display: block;
+                          width: 18px;
+                          height: 18px;
+                          border: 0;
+                        "
+                      />
+                    </td>
+                    <td
+                      valign="middle"
+                      style="font-family: Inter, Arial, Helvetica, sans-serif"
+                    >
+                      <p
+                        style="
+                          margin: 0px 0 0 0;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 17px;
+                          line-height: 22px;
+                          font-weight: 600;
+                          color: #1d1a24;
+                        "
+                      >
+                        Preserved Entitlements &amp; Retained Sovereign Assets
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #494455;">Because this action is an academic rollover rather than an administrative withdrawal, all verified prerequisites and sponsorship grants remain assigned to your identity:</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 8px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #494455;
+                  "
+                >
+                  Because this action is an academic rollover rather than an
+                  administrative withdrawal, all verified prerequisites and
+                  sponsorship grants remain assigned to your identity:
+                </p>
               </td>
             </tr>
             <!-- Entitlements -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 20px 0 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="38" style="width: 38px"><img src="img/icon-c-money.png" width="28" height="28" alt="" border="0" style="display: block; width: 28px; height: 28px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">100% Retained Sponsorship</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Your full FMCIDE / AfDB grant sponsorship carries forward automatically. No re-application or financial deposit is required.</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="38" style="width: 38px"><img src="img/icon-c-archive.png" width="28" height="28" alt="" border="0" style="display: block; width: 28px; height: 28px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Completed Milestone Credits</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Scores for Milestones 1 through 5 (<strong style="font-weight: bold; color: #692fe5">Diagnostic: 88/100, Tier 1 Advanced</strong>) remain banked permanently.</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="38" style="width: 38px"><img src="img/icon-c-cloud.png" width="28" height="28" alt="" border="0" style="display: block; width: 28px; height: 28px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Cloud Sandbox Quota Reset</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Your enterprise cloud compute and virtual sandbox credits will be refreshed and re-provisioned for the Cohort 5 curriculum start.</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="38" style="width: 38px"><img src="img/icon-c-badge.png" width="28" height="28" alt="" border="0" style="display: block; width: 28px; height: 28px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Hub Physical Access</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Your biometric badge for hot-desk and hardware labs at the Abuja CBD Innovation Hub reactivates with the incoming batch.</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 8px 20px 0 20px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td style="font-size: 0; text-align: left">
+                      <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><!
+                      [endif]-->[endif]--><!--[if mso]><td width="300" valign="top"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 300px;
+                          vertical-align: top;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td style="padding: 4px; text-align: left">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                bgcolor="#F4EFFD"
+                                style="
+                                  background-color: #f4effd;
+                                  border-radius: 10px;
+                                "
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 14px 14px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      text-align: left;
+                                    "
+                                  >
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td
+                                          valign="top"
+                                          width="38"
+                                          style="width: 38px"
+                                        >
+                                          <img
+                                            src="img/icon-c-money.png"
+                                            width="28"
+                                            height="28"
+                                            alt=""
+                                            border="0"
+                                            style="
+                                              display: block;
+                                              width: 28px;
+                                              height: 28px;
+                                              border: 0;
+                                            "
+                                          />
+                                        </td>
+                                        <td
+                                          valign="top"
+                                          style="
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            100% Retained Sponsorship
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 12px;
+                                              line-height: 18px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Your full FMCIDE / AfDB grant
+                                            sponsorship carries forward
+                                            automatically. No re-application or
+                                            financial deposit is required.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td><!
+                      [endif]-->[endif]--><!--[if mso]><td width="300" valign="top"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 300px;
+                          vertical-align: top;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td style="padding: 4px; text-align: left">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                bgcolor="#F4EFFD"
+                                style="
+                                  background-color: #f4effd;
+                                  border-radius: 10px;
+                                "
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 14px 14px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      text-align: left;
+                                    "
+                                  >
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td
+                                          valign="top"
+                                          width="38"
+                                          style="width: 38px"
+                                        >
+                                          <img
+                                            src="img/icon-c-archive.png"
+                                            width="28"
+                                            height="28"
+                                            alt=""
+                                            border="0"
+                                            style="
+                                              display: block;
+                                              width: 28px;
+                                              height: 28px;
+                                              border: 0;
+                                            "
+                                          />
+                                        </td>
+                                        <td
+                                          valign="top"
+                                          style="
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Completed Milestone Credits
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 12px;
+                                              line-height: 18px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Scores for Milestones 1 through 5
+                                            (<strong
+                                              style="
+                                                font-weight: 600;
+                                                color: #692fe5;
+                                              "
+                                              >Diagnostic: 88/100, Tier 1
+                                              Advanced</strong
+                                            >) remain banked permanently.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td><!
+                      [endif]-->[endif]--><!--[if mso]></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td style="font-size: 0; text-align: left">
+                      <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><!
+                      [endif]-->[endif]--><!--[if mso]><td width="300" valign="top"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 300px;
+                          vertical-align: top;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td style="padding: 4px; text-align: left">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                bgcolor="#F4EFFD"
+                                style="
+                                  background-color: #f4effd;
+                                  border-radius: 10px;
+                                "
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 14px 14px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      text-align: left;
+                                    "
+                                  >
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td
+                                          valign="top"
+                                          width="38"
+                                          style="width: 38px"
+                                        >
+                                          <img
+                                            src="img/icon-c-cloud.png"
+                                            width="28"
+                                            height="28"
+                                            alt=""
+                                            border="0"
+                                            style="
+                                              display: block;
+                                              width: 28px;
+                                              height: 28px;
+                                              border: 0;
+                                            "
+                                          />
+                                        </td>
+                                        <td
+                                          valign="top"
+                                          style="
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Cloud Sandbox Quota Reset
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 12px;
+                                              line-height: 18px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Your enterprise cloud compute and
+                                            virtual sandbox credits will be
+                                            refreshed and re-provisioned for the
+                                            Cohort 5 curriculum start.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td><!
+                      [endif]-->[endif]--><!--[if mso]><td width="300" valign="top"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 300px;
+                          vertical-align: top;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td style="padding: 4px; text-align: left">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                bgcolor="#F4EFFD"
+                                style="
+                                  background-color: #f4effd;
+                                  border-radius: 10px;
+                                "
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding: 14px 14px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      text-align: left;
+                                    "
+                                  >
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tr>
+                                        <td
+                                          valign="top"
+                                          width="38"
+                                          style="width: 38px"
+                                        >
+                                          <img
+                                            src="img/icon-c-badge.png"
+                                            width="28"
+                                            height="28"
+                                            alt=""
+                                            border="0"
+                                            style="
+                                              display: block;
+                                              width: 28px;
+                                              height: 28px;
+                                              border: 0;
+                                            "
+                                          />
+                                        </td>
+                                        <td
+                                          valign="top"
+                                          style="
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                          "
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Hub Physical Access
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 12px;
+                                              line-height: 18px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            Your biometric badge for hot-desk
+                                            and hardware labs at the Abuja CBD
+                                            Innovation Hub reactivates with the
+                                            incoming batch.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td><!
+                      [endif]-->[endif]--><!--[if mso]></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 24px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Select Your Action Pathway</p></td><td valign="middle" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #8f4900; letter-spacing: 0.6px; white-space: nowrap;">MANDATORY SELECTION</p></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 24px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td
+                      valign="middle"
+                      style="font-family: Inter, Arial, Helvetica, sans-serif"
+                    >
+                      <p
+                        style="
+                          margin: 0px 0 0 0;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 15px;
+                          line-height: 20px;
+                          font-weight: 600;
+                          color: #1d1a24;
+                        "
+                      >
+                        Select Your Action Pathway
+                      </p>
+                    </td>
+                    <td
+                      valign="middle"
+                      align="right"
+                      style="
+                        padding-left: 8px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0px 0 0 0;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          line-height: 14px;
+                          font-weight: 600;
+                          color: #8f4900;
+                          letter-spacing: 0.6px;
+                          white-space: nowrap;
+                        "
+                      >
+                        MANDATORY SELECTION
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Pathways. EDIT: button URLs -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 20px 0 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 12px 16px 18px 16px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="right"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 4px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 9px; line-height: 13px; font-weight: bold; letter-spacing: 0.6px; color: #FFFFFF; white-space: nowrap;">RECOMMENDED</td></tr></table></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="22" style="width: 22px"><img src="img/icon-calendar.png" width="16" height="16" alt="" border="0" style="display: block; width: 16px; height: 16px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #692fe5;">Pathway A: Confirm Rollover</p></td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 19px; color: #3a3642;">Accept transfer to <strong style="font-weight: bold; color: #1d1a24">Cohort 5 (January 2027)</strong>. Reset your calendar without academic penalty, retain full bursary standing, and pick up directly at Milestone 6.</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="16" style="height: 16px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://portal.idice-skills.gov.ng/rollover/confirm" style="height:44px;v-text-anchor:middle;width:240px;" arcsize="50%" stroke="f" fillcolor="#692FE5"><w:anchorlock/><center style="color:#ffffff;font-family:'Times New Roman',serif;font-size:14px;font-weight:bold;">Confirm Cohort 5 Placement &#8594;</center></v:roundrect><![endif]--><!--[if !mso]><!-- --><a class="cta-link" href="https://portal.idice-skills.gov.ng/rollover/confirm" target="_blank" style="display: inline-block; padding: 13px 28px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 18px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 999px">Confirm Cohort 5 Placement<span style="margin-left: 8px">&#8594;</span></a><!--<![endif]--></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 12px 16px 18px 16px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="18" style="height: 18px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="22" style="width: 22px"><img src="img/icon-help-brown.png" width="16" height="16" alt="" border="0" style="display: block; width: 16px; height: 16px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #8f4900;">Pathway B: Extenuating Appeal</p></td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 19px; color: #3a3642;">If inactivity was caused by documented health, bereavement, or verifiable connectivity blackouts, file an expedited appeal within <strong style="font-weight: bold; color: #1d1a24">72 hours</strong> to resume Cohort 4.</p><!-- EDIT: appeal cutoff --><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#E9E5EF" style="margin-top: 10px; background-color: #e9e5ef; border-radius: 4px"><tr><td style="padding: 5px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 15px; color: #494455">Cutoff: 14 Nov 2026 &bull; 23:59 WAT</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="12" style="height: 12px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#E9E5EF" style="background-color: #e9e5ef; border-radius: 999px;"><a href="https://portal.idice-skills.gov.ng/rollover/appeal" target="_blank" style="display: block; padding: 13px 22px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-decoration: none; color: #1d1a24"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="22" style="width: 22px"><img src="img/icon-document.png" width="16" height="16" alt="" border="0" style="display: block; width: 16px; height: 16px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 18px; font-weight: bold; color: #1d1a24">Submit 72-Hour Appeal</td></tr></table></a></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 8px 20px 0 20px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td
+                      class="pathway-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        vertical-align: top;
+                        padding-right: 8px;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            height="100%"
+                            style="
+                              padding: 12px 16px 0 16px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td align="right">
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 4px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 9px;
+                                          line-height: 13px;
+                                          font-weight: 600;
+                                          letter-spacing: 0.6px;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        RECOMMENDED
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  valign="middle"
+                                  width="22"
+                                  style="width: 22px"
+                                >
+                                  <img
+                                    src="img/icon-calendar.png"
+                                    width="16"
+                                    height="16"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 16px;
+                                      height: 16px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 14px;
+                                      line-height: 19px;
+                                      font-weight: 600;
+                                      color: #692fe5;
+                                    "
+                                  >
+                                    Pathway A: Confirm Rollover
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 6px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 19px;
+                                color: #3a3642;
+                              "
+                            >
+                              Accept transfer to
+                              <strong style="font-weight: 600; color: #1d1a24"
+                                >Cohort 5 (January 2027)</strong
+                              >. Reset your calendar without academic penalty,
+                              retain full bursary standing, and pick up directly
+                              at Milestone 6.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="
+                              padding: 16px 16px 18px 16px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  align="center"
+                                  bgcolor="#692FE5"
+                                  style="
+                                    background-color: #692fe5;
+                                    border-radius: 999px;
+                                  "
+                                >
+                                  <!--[if mso
+                                    ]><v:roundrect
+                                      xmlns:v="urn:schemas-microsoft-com:vml"
+                                      xmlns:w="urn:schemas-microsoft-com:office:word"
+                                      href="https://portal.idice-skills.gov.ng/rollover/confirm"
+                                      style="
+                                        height: 44px;
+                                        v-text-anchor: middle;
+                                        width: 240px;
+                                      "
+                                      arcsize="50%"
+                                      stroke="f"
+                                      fillcolor="#692FE5"
+                                      ><w:anchorlock />
+                                      <center
+                                        style="
+                                          color: #ffffff;
+                                          font-family:
+                                            Arial, Helvetica, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: 600;
+                                        "
+                                      >
+                                        Confirm Cohort 5 Placement &#8594;
+                                      </center></v:roundrect
+                                    ><!
+                                  [endif]--><!--[if !mso]><!-- --><a
+                                    class="cta-link"
+                                    href="https://portal.idice-skills.gov.ng/rollover/confirm"
+                                    target="_blank"
+                                    style="
+                                      display: inline-block;
+                                      padding: 13px 28px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 14px;
+                                      line-height: 18px;
+                                      font-weight: 600;
+                                      color: #ffffff;
+                                      text-decoration: none;
+                                      border-radius: 999px;
+                                    "
+                                    >Confirm Cohort 5 Placement<span
+                                      style="margin-left: 8px"
+                                      >&#8594;</span
+                                    ></a
+                                  ><!--<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="pathway-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        vertical-align: top;
+                        padding-left: 8px;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            height="100%"
+                            style="
+                              padding: 12px 16px 0 16px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  height="18"
+                                  style="
+                                    height: 18px;
+                                    font-size: 0;
+                                    line-height: 0;
+                                  "
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  valign="middle"
+                                  width="22"
+                                  style="width: 22px"
+                                >
+                                  <img
+                                    src="img/icon-help-brown.png"
+                                    width="16"
+                                    height="16"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 16px;
+                                      height: 16px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 14px;
+                                      line-height: 19px;
+                                      font-weight: 600;
+                                      color: #8f4900;
+                                    "
+                                  >
+                                    Pathway B: Extenuating Appeal
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 6px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 19px;
+                                color: #3a3642;
+                              "
+                            >
+                              If inactivity was caused by documented health,
+                              bereavement, or verifiable connectivity blackouts,
+                              file an expedited appeal within
+                              <strong style="font-weight: 600; color: #1d1a24"
+                                >72 hours</strong
+                              >
+                              to resume Cohort 4.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="
+                              padding: 12px 16px 18px 16px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <!-- EDIT: appeal cutoff -->
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              bgcolor="#E9E5EF"
+                              style="
+                                background-color: #e9e5ef;
+                                border-radius: 4px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding: 5px 8px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    font-size: 11px;
+                                    line-height: 15px;
+                                    color: #494455;
+                                  "
+                                >
+                                  Cutoff: 14 Nov 2026 &bull; 23:59 WAT
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td
+                                  height="12"
+                                  style="
+                                    height: 12px;
+                                    font-size: 0;
+                                    line-height: 0;
+                                  "
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  bgcolor="#E9E5EF"
+                                  style="
+                                    background-color: #e9e5ef;
+                                    border-radius: 999px;
+                                  "
+                                >
+                                  <a
+                                    href="https://portal.idice-skills.gov.ng/rollover/appeal"
+                                    target="_blank"
+                                    style="
+                                      display: block;
+                                      padding: 13px 22px;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      text-decoration: none;
+                                      color: #1d1a24;
+                                    "
+                                    ><table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                    >
+                                      <tr>
+                                        <td
+                                          valign="middle"
+                                          width="22"
+                                          style="width: 22px"
+                                        >
+                                          <img
+                                            src="img/icon-document.png"
+                                            width="16"
+                                            height="16"
+                                            alt=""
+                                            border="0"
+                                            style="
+                                              display: block;
+                                              width: 16px;
+                                              height: 16px;
+                                              border: 0;
+                                            "
+                                          />
+                                        </td>
+                                        <td
+                                          valign="middle"
+                                          style="
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            font-weight: 600;
+                                            color: #1d1a24;
+                                          "
+                                        >
+                                          Submit 72-Hour Appeal
+                                        </td>
+                                      </tr>
+                                    </table></a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Schedule. EDIT: dates -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px;"><tr><td style="padding: 18px 17px 8px 17px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="stack" valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Rollover Progression Schedule</p></td><td class="stack stack-right" valign="middle" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; color: #494455; text-align: right;">Timezone: West Africa Time (WAT)</p></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="12" style="height: 12px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 6px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 6px 0 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="26" style="width: 26px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="20" bgcolor="#692FE5" style="width: 20px; background-color: #692fe5; border-radius: 10px"><tr><td align="center" valign="middle" width="20" height="20" style="width: 20px; height: 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 20px; font-weight: bold; color: #FFFFFF">1</td></tr></table></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 13px; font-weight: bold; letter-spacing: 0.4px; color: #692fe5">CURRENT STATE</td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Notice Dispatched</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #494455;">11 Nov 2026 &bull; Status updated in central directory</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 6px"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="26" style="width: 26px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="20" bgcolor="#8F4900" style="width: 20px; background-color: #8f4900; border-radius: 10px"><tr><td align="center" valign="middle" width="20" height="20" style="width: 20px; height: 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 20px; font-weight: bold; color: #FFFFFF">2</td></tr></table></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 13px; font-weight: bold; letter-spacing: 0.4px; color: #8f4900">72H WINDOW</td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Appeal Cutoff</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #494455;">14 Nov 2026 &bull; 23:59 WAT portal lockout</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 6px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 6px 0 0"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="26" style="width: 26px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="20" bgcolor="#ECE8F2" style="width: 20px; background-color: #ece8f2; border-radius: 10px"><tr><td align="center" valign="middle" width="20" height="20" style="width: 20px; height: 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 20px; font-weight: bold; color: #494455">3</td></tr></table></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 13px; font-weight: bold; letter-spacing: 0.4px; color: #8a8494">PREPARATION</td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">LMS &amp; Desk Sync</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #494455;">05 Jan 2027 &bull; Cohort 5 Stream B roster locked</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 6px"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="26" style="width: 26px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="20" bgcolor="#ECE8F2" style="width: 20px; background-color: #ece8f2; border-radius: 10px"><tr><td align="center" valign="middle" width="20" height="20" style="width: 20px; height: 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 20px; font-weight: bold; color: #494455">4</td></tr></table></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 13px; font-weight: bold; letter-spacing: 0.4px; color: #8a8494">CLASS START</td></tr></table><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 19px; font-weight: bold; color: #1d1a24;">Orientation Restart</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #494455;">15 Jan 2027 &bull; Lab resumption &amp; Milestone 6</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 17px 8px 17px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            class="stack"
+                            valign="middle"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: 600;
+                                color: #1d1a24;
+                              "
+                            >
+                              Rollover Progression Schedule
+                            </p>
+                          </td>
+                          <td
+                            class="stack stack-right"
+                            valign="middle"
+                            align="right"
+                            style="
+                              padding-left: 8px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #494455;
+                                text-align: right;
+                              "
+                            >
+                              Timezone: West Africa Time (WAT)
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            height="12"
+                            style="height: 12px; font-size: 0; line-height: 0"
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td style="font-size: 0; text-align: left">
+                            <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><!
+                            [endif]-->[endif]--><!--[if mso]><td width="276" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 276px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 6px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="table-layout: fixed"
+                                    >
+                                      <tr>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 6px 0 0"
+                                        >
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                          >
+                                            <tr>
+                                              <td
+                                                valign="middle"
+                                                width="26"
+                                                style="width: 26px"
+                                              >
+                                                <table
+                                                  role="presentation"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="20"
+                                                  bgcolor="#692FE5"
+                                                  style="
+                                                    width: 20px;
+                                                    background-color: #692fe5;
+                                                    border-radius: 10px;
+                                                  "
+                                                >
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      valign="middle"
+                                                      width="20"
+                                                      height="20"
+                                                      style="
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        font-family:
+                                                          Inter, Arial,
+                                                          Helvetica, sans-serif;
+                                                        font-size: 11px;
+                                                        line-height: 20px;
+                                                        font-weight: 600;
+                                                        color: #ffffff;
+                                                      "
+                                                    >
+                                                      1
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td
+                                                valign="middle"
+                                                style="
+                                                  font-family:
+                                                    Inter, Arial, Helvetica,
+                                                    sans-serif;
+                                                  font-size: 10px;
+                                                  line-height: 13px;
+                                                  font-weight: 600;
+                                                  letter-spacing: 0.4px;
+                                                  color: #692fe5;
+                                                "
+                                              >
+                                                CURRENT STATE
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <p
+                                            style="
+                                              margin: 6px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Notice Dispatched
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 2px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 16px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            11 Nov 2026 &bull; Status updated in
+                                            central directory
+                                          </p>
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td
+                                                height="10"
+                                                style="
+                                                  height: 10px;
+                                                  font-size: 0;
+                                                  line-height: 0;
+                                                "
+                                              >
+                                                &nbsp;
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 0 0 6px"
+                                        >
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                          >
+                                            <tr>
+                                              <td
+                                                valign="middle"
+                                                width="26"
+                                                style="width: 26px"
+                                              >
+                                                <table
+                                                  role="presentation"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="20"
+                                                  bgcolor="#8F4900"
+                                                  style="
+                                                    width: 20px;
+                                                    background-color: #8f4900;
+                                                    border-radius: 10px;
+                                                  "
+                                                >
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      valign="middle"
+                                                      width="20"
+                                                      height="20"
+                                                      style="
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        font-family:
+                                                          Inter, Arial,
+                                                          Helvetica, sans-serif;
+                                                        font-size: 11px;
+                                                        line-height: 20px;
+                                                        font-weight: 600;
+                                                        color: #ffffff;
+                                                      "
+                                                    >
+                                                      2
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td
+                                                valign="middle"
+                                                style="
+                                                  font-family:
+                                                    Inter, Arial, Helvetica,
+                                                    sans-serif;
+                                                  font-size: 10px;
+                                                  line-height: 13px;
+                                                  font-weight: 600;
+                                                  letter-spacing: 0.4px;
+                                                  color: #8f4900;
+                                                "
+                                              >
+                                                72H WINDOW
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <p
+                                            style="
+                                              margin: 6px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Appeal Cutoff
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 2px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 16px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            14 Nov 2026 &bull; 23:59 WAT portal
+                                            lockout
+                                          </p>
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td
+                                                height="10"
+                                                style="
+                                                  height: 10px;
+                                                  font-size: 0;
+                                                  line-height: 0;
+                                                "
+                                              >
+                                                &nbsp;
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]><td width="276" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 276px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 6px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="table-layout: fixed"
+                                    >
+                                      <tr>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 6px 0 0"
+                                        >
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                          >
+                                            <tr>
+                                              <td
+                                                valign="middle"
+                                                width="26"
+                                                style="width: 26px"
+                                              >
+                                                <table
+                                                  role="presentation"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="20"
+                                                  bgcolor="#ECE8F2"
+                                                  style="
+                                                    width: 20px;
+                                                    background-color: #ece8f2;
+                                                    border-radius: 10px;
+                                                  "
+                                                >
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      valign="middle"
+                                                      width="20"
+                                                      height="20"
+                                                      style="
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        font-family:
+                                                          Inter, Arial,
+                                                          Helvetica, sans-serif;
+                                                        font-size: 11px;
+                                                        line-height: 20px;
+                                                        font-weight: 600;
+                                                        color: #494455;
+                                                      "
+                                                    >
+                                                      3
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td
+                                                valign="middle"
+                                                style="
+                                                  font-family:
+                                                    Inter, Arial, Helvetica,
+                                                    sans-serif;
+                                                  font-size: 10px;
+                                                  line-height: 13px;
+                                                  font-weight: 600;
+                                                  letter-spacing: 0.4px;
+                                                  color: #8a8494;
+                                                "
+                                              >
+                                                PREPARATION
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <p
+                                            style="
+                                              margin: 6px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            LMS &amp; Desk Sync
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 2px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 16px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            05 Jan 2027 &bull; Cohort 5 Stream B
+                                            roster locked
+                                          </p>
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td
+                                                height="10"
+                                                style="
+                                                  height: 10px;
+                                                  font-size: 0;
+                                                  line-height: 0;
+                                                "
+                                              >
+                                                &nbsp;
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 0 0 6px"
+                                        >
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                          >
+                                            <tr>
+                                              <td
+                                                valign="middle"
+                                                width="26"
+                                                style="width: 26px"
+                                              >
+                                                <table
+                                                  role="presentation"
+                                                  border="0"
+                                                  cellpadding="0"
+                                                  cellspacing="0"
+                                                  width="20"
+                                                  bgcolor="#ECE8F2"
+                                                  style="
+                                                    width: 20px;
+                                                    background-color: #ece8f2;
+                                                    border-radius: 10px;
+                                                  "
+                                                >
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      valign="middle"
+                                                      width="20"
+                                                      height="20"
+                                                      style="
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        font-family:
+                                                          Inter, Arial,
+                                                          Helvetica, sans-serif;
+                                                        font-size: 11px;
+                                                        line-height: 20px;
+                                                        font-weight: 600;
+                                                        color: #494455;
+                                                      "
+                                                    >
+                                                      4
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                              <td
+                                                valign="middle"
+                                                style="
+                                                  font-family:
+                                                    Inter, Arial, Helvetica,
+                                                    sans-serif;
+                                                  font-size: 10px;
+                                                  line-height: 13px;
+                                                  font-weight: 600;
+                                                  letter-spacing: 0.4px;
+                                                  color: #8a8494;
+                                                "
+                                              >
+                                                CLASS START
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <p
+                                            style="
+                                              margin: 6px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 14px;
+                                              line-height: 19px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Orientation Restart
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 2px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 16px;
+                                              color: #494455;
+                                            "
+                                          >
+                                            15 Jan 2027 &bull; Lab resumption
+                                            &amp; Milestone 6
+                                          </p>
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="100%"
+                                          >
+                                            <tr>
+                                              <td
+                                                height="10"
+                                                style="
+                                                  height: 10px;
+                                                  font-size: 0;
+                                                  line-height: 0;
+                                                "
+                                              >
+                                                &nbsp;
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Record. EDIT: candidate details and hash -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 28px 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #eee8f8; border-radius: 10px"><tr><td style="padding: 14px 14px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="556"><tr><![endif]--><!--[if mso]><td width="278" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 278px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 4px 0 0"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #8a8494; letter-spacing: 0.6px;">CANDIDATE</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">Amina Zainab Bello</p></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 4px"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #8a8494; letter-spacing: 0.6px;">PARTICIPANT ID</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">NC-FCT-2026-8812</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="278" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 278px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 4px 0 0"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #8a8494; letter-spacing: 0.6px;">ASSIGNED HUB</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">FCT (Abuja CBD)</p></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 4px"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #8a8494; letter-spacing: 0.6px;">AUTHORITY</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">Regional Academic Board</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="margin-top: 10px; background-color: #f4effd; border-radius: 4px"><tr><td style="padding: 6px 10px"><p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 16px; color: #5b4a9e; word-break: break-all">SHA256: 7f3b892a01d...c4-c3</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 28px 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td
+                      bgcolor="#FFFFFF"
+                      style="
+                        padding: 16px 8px;
+                        background-color: #ffffff;
+                        border-radius: 12px;
+                        box-shadow: 0px 1px 2px 0px #0000000d;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <tr>
+                          <td
+                            width="25%"
+                            valign="top"
+                            style="
+                              width: 25%;
+                              padding: 2px 14px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: #8a8494;
+                                letter-spacing: 0.6px;
+                              "
+                            >
+                              CANDIDATE
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 18px;
+                                font-weight: 500;
+                                color: #3a3642;
+                              "
+                            >
+                              Amina Zainab Bello
+                            </p>
+                          </td>
+                          <td
+                            width="25%"
+                            valign="top"
+                            style="
+                              width: 25%;
+                              padding: 2px 14px;
+                              border-left: 1px solid #e6e1ea;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: #8a8494;
+                                letter-spacing: 0.6px;
+                              "
+                            >
+                              PARTICIPANT ID
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 18px;
+                                font-weight: 500;
+                                color: #3a3642;
+                              "
+                            >
+                              NC-FCT-2026-8812
+                            </p>
+                          </td>
+                          <td
+                            width="25%"
+                            valign="top"
+                            style="
+                              width: 25%;
+                              padding: 2px 14px;
+                              border-left: 1px solid #e6e1ea;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: #8a8494;
+                                letter-spacing: 0.6px;
+                              "
+                            >
+                              ASSIGNED HUB
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 18px;
+                                font-weight: 500;
+                                color: #3a3642;
+                              "
+                            >
+                              FCT (Abuja CBD)
+                            </p>
+                          </td>
+                          <td
+                            width="25%"
+                            valign="top"
+                            style="
+                              width: 25%;
+                              padding: 2px 14px;
+                              border-left: 1px solid #e6e1ea;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: #8a8494;
+                                letter-spacing: 0.6px;
+                              "
+                            >
+                              AUTHORITY
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 18px;
+                                font-weight: 500;
+                                color: #3a3642;
+                              "
+                            >
+                              Regional Academic Board
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <tr>
+                          <td style="padding: 12px 14px 2px 14px">
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              bgcolor="#F4EFFD"
+                              style="
+                                background-color: #f4effd;
+                                border-radius: 4px;
+                              "
+                            >
+                              <tr>
+                                <td style="padding: 6px 10px">
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        &quot;Courier New&quot;, Courier,
+                                        monospace;
+                                      font-size: 11px;
+                                      line-height: 16px;
+                                      color: #5b4a9e;
+                                      word-break: break-all;
+                                    "
+                                  >
+                                    SHA256: 7f3b892a01d...c4-c3
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- ===================== FOOTER ===================== -->
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 22px 16px 8px 16px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto"><tr><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-fmcide.png" width="18" height="18" alt="FMCIDE" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">FMCIDE</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Federal Government</p></td></tr></table></td><td width="28" style="width: 28px; font-size: 0; line-height: 0">&nbsp;</td><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-afdb.png" width="18" height="18" alt="AFDB" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">AFDB</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Co-Financing Partner</p></td></tr></table></td><td width="28" style="width: 28px; font-size: 0; line-height: 0">&nbsp;</td><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-boi.png" width="18" height="18" alt="BOI" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">BOI</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Implementation Agency</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 22px 16px 8px 16px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="margin: 0 auto"
+                >
+                  <tr>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-fmcide.png"
+                              width="18"
+                              height="18"
+                              alt="FMCIDE"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: 600;
+                                color: #1d1a24;
+                              "
+                            >
+                              FMCIDE
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Federal Government
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      width="28"
+                      style="width: 28px; font-size: 0; line-height: 0"
+                    >
+                      &nbsp;
+                    </td>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-afdb.png"
+                              width="18"
+                              height="18"
+                              alt="AFDB"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: 600;
+                                color: #1d1a24;
+                              "
+                            >
+                              AFDB
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Co-Financing Partner
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      width="28"
+                      style="width: 28px; font-size: 0; line-height: 0"
+                    >
+                      &nbsp;
+                    </td>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-boi.png"
+                              width="18"
+                              height="18"
+                              alt="BOI"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: 600;
+                                color: #1d1a24;
+                              "
+                            >
+                              BOI
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Implementation Agency
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 16px 22px 0 22px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 19px; color: #494455; text-align: center;">Need assistance? Email us at <a href="mailto:support@idice-skills.gov.ng" style="color: #6651a1; text-decoration: underline">support@idice-skills.gov.ng</a> or visit the regional knowledge base.</p>
+              <td
+                class="px"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 16px 22px 0 22px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #494455;
+                    text-align: center;
+                  "
+                >
+                  Need assistance? Email us at
+                  <a
+                    href="mailto:support@idice-skills.gov.ng"
+                    style="color: #6651a1; text-decoration: underline"
+                    >support@idice-skills.gov.ng</a
+                  >
+                  or visit the regional knowledge base.
+                </p>
               </td>
             </tr>
             <tr>
-              <td class="px" align="center" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 8px 28px 22px 28px; border-radius: 0 0 18px 18px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #8a8494; text-align: center;">This is an automated dispatch from the iDICE North Central Candidate Management System. Please do not reply directly to this notification address.</p>
+              <td
+                class="px"
+                align="center"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 8px 28px 22px 28px;
+                  border-radius: 0 0 18px 18px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 11px;
+                    line-height: 16px;
+                    color: #8a8494;
+                    text-align: center;
+                  "
+                >
+                  This is an automated dispatch from the iDICE North Central
+                  Candidate Management System. Please do not reply directly to
+                  this notification address.
+                </p>
               </td>
             </tr>
           </table>

@@ -1,17 +1,38 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no"
+    />
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
     <title>iDICE — Welcome back to Cohort 5</title>
     <!--[if mso]>
-    <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
-    <style>td,p,a,span{font-family:"Times New Roman",Times,serif !important;}</style>
+      <noscript
+        ><xml
+          ><o:OfficeDocumentSettings
+            ><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings
+          ></xml
+        ></noscript
+      >
+      <style>
+        td,
+        p,
+        a,
+        span {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+      </style>
     <![endif]-->
     <!--
       BACKEND NOTES
@@ -22,126 +43,2808 @@
         phones in clients that support media queries. All other styling is inline.
       - Keep the sent HTML under ~100KB or Gmail clips it ("[Message clipped]").
     -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
     <style>
-      :root { color-scheme: light only; supported-color-schemes: light; }
-      html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
-      * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
-      table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; }
-      img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-      a { text-decoration: none; }
-      a[x-apple-data-detectors], .unstyle-auto-link a { color: inherit !important; text-decoration: none !important; font-weight: inherit !important; }
-      #MessageViewBody a { color: inherit; text-decoration: none; }
+      :root {
+        color-scheme: light only;
+        supported-color-schemes: light;
+      }
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+      }
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        border-collapse: collapse !important;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      a[x-apple-data-detectors],
+      .unstyle-auto-link a {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-weight: inherit !important;
+      }
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+      }
       @media only screen and (max-width: 620px) {
-        .page-gutter { padding: 0 0 12px 0 !important; }
-        .container { width: 100% !important; max-width: 100% !important; border-radius: 0 !important; }
-        .px { padding-left: 16px !important; padding-right: 16px !important; }
-        .hello { font-size: 22px !important; line-height: 28px !important; }
-        .stack { display: block !important; width: 100% !important; max-width: 100% !important; }
-        .stack-right { text-align: left !important; padding-top: 12px !important; padding-left: 0 !important; }
-        .right-float { float: none !important; }
-        .hero-title { font-size: 24px !important; line-height: 30px !important; }
-        .cta-link { padding: 13px 22px !important; font-size: 14px !important; }
-        .partner-name { font-size: 11px !important; line-height: 14px !important; }
-        .partner-role { font-size: 10px !important; line-height: 13px !important; }
+        .page-gutter {
+          padding: 0 0 12px 0 !important;
+        }
+        .container {
+          width: 100% !important;
+          max-width: 100% !important;
+          border-radius: 0 !important;
+        }
+        .px {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .hello {
+          font-size: 22px !important;
+          line-height: 28px !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .header-row,
+        .header-row tbody,
+        .header-row tr,
+        .header-brand,
+        .header-main,
+        .header-side {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        .header-side {
+          padding: 12px 0 0 0 !important;
+          text-align: left !important;
+          white-space: normal !important;
+        }
+        .header-side table {
+          float: none !important;
+        }
+        .header-wrap {
+          padding: 12px 12px 0 12px !important;
+        }
+        .eq-cell {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+          box-sizing: border-box !important;
+          padding: 0 0 16px 0 !important;
+        }
+        .eq-gap {
+          display: none !important;
+          width: 0 !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+          font-size: 0 !important;
+          line-height: 0 !important;
+        }
+        .cta-row,
+        .cta-row tbody,
+        .cta-row tr,
+        .cta-btn {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+          text-align: center !important;
+        }
+        .cta-gap {
+          display: block !important;
+          width: 100% !important;
+          height: 12px !important;
+          line-height: 12px !important;
+          font-size: 0 !important;
+        }
+        .stack-right {
+          text-align: left !important;
+          padding-top: 12px !important;
+          padding-left: 0 !important;
+        }
+        .right-float {
+          float: none !important;
+        }
+        .hero-title {
+          font-size: 24px !important;
+          line-height: 30px !important;
+        }
+        .cta-link {
+          padding: 13px 22px !important;
+          font-size: 14px !important;
+        }
+        .partner-name {
+          font-size: 11px !important;
+          line-height: 14px !important;
+        }
+        .partner-role {
+          font-size: 10px !important;
+          line-height: 13px !important;
+        }
       }
     </style>
   </head>
 
-  <body style="margin: 0; padding: 0; background-color: #ffffff; width: 100%">
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      width: 100%;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+    "
+  >
     <!-- EDIT: inbox preview text. Keep it under ~90 characters. -->
-    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; color: #ffffff">
-      You are re-instated in Cohort 5 (Stream B). All prior progress is preserved. Resume Milestone 6 now.
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        color: #ffffff;
+      "
+    >
+      You are re-instated in Cohort 5 (Stream B). All prior progress is
+      preserved. Resume Milestone 6 now.
     </div>
-    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all">
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        line-height: 1px;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+      "
+    >
       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
     </div>
 
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; width: 100%">
+    <table
+      role="presentation"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      bgcolor="#FFFFFF"
+      style="background-color: #ffffff; width: 100%"
+    >
       <tr>
         <td class="page-gutter" align="center" style="padding: 24px 12px">
           <!--[if mso]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="640"><tr><td><![endif]-->
-          <table role="presentation" class="container" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="width: 100%; max-width: 640px; background-color: #ffffff; border-radius: 18px; box-shadow: 0px 2px 4px -2px #e5e1ea, 0px 4px 6px -1px #e5e1ea">
+          <table
+            role="presentation"
+            class="container"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            bgcolor="#FFFFFF"
+            style="
+              width: 100%;
+              max-width: 640px;
+              background-color: #ffffff;
+              border-radius: 18px;
+              box-shadow:
+                0px 2px 4px -2px #e5e1ea,
+                0px 4px 6px -1px #e5e1ea;
+            "
+          >
             <tr>
-              <td bgcolor="#692FE5" height="6" style="height: 6px; background-color: #692fe5; background-image: linear-gradient(90deg, #692fe5 0%, #824fff 55%, #8f4900 100%); font-size: 0; line-height: 6px; mso-line-height-rule: exactly; border-radius: 18px 18px 0 0">&nbsp;</td>
+              <td
+                bgcolor="#692FE5"
+                height="6"
+                style="
+                  height: 6px;
+                  background-color: #692fe5;
+                  background-image: linear-gradient(
+                    90deg,
+                    #692fe5 0%,
+                    #824fff 55%,
+                    #8f4900 100%
+                  );
+                  font-size: 0;
+                  line-height: 6px;
+                  mso-line-height-rule: exactly;
+                  border-radius: 18px 18px 0 0;
+                "
+              >
+                &nbsp;
+              </td>
             </tr>
             <!-- ===================== HEADER ===================== -->
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 22px 24px; font-size: 0">
-                <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="592"><tr><td width="330" valign="middle"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 330px; vertical-align: middle"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="50" style="width: 50px"><img src="img/icon-directorate.png" width="40" height="40" alt="iDICE" border="0" style="display: block; width: 40px; height: 40px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #692fe5; letter-spacing: 0.7px;">FEDERAL REPUBLIC OF NIGERIA &bull; FMCIDE &bull; AFDB &bull; BOI</p><p style="margin: 2px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 17px; line-height: 22px; font-weight: bold; color: #1d1a24;">iDICE Programme Directorate</p><p style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 16px; color: #494455;">North Central Regional Hub: FCT &bull; Benue &bull; Kogi &bull; Kwara &bull; Nasarawa &bull; Niger &bull; Plateau</p></td></tr></table></div><!--[if mso]></td><td width="262" valign="middle" align="right"><![endif]--><div class="stack stack-right" style="display: inline-block; width: 100%; max-width: 262px; vertical-align: middle; text-align: right"><!-- EDIT: status and reference --><table class="right-float" role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px; padding: 5px 12px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF;"><span style="color: #FFFFFF">&#9679;</span>&nbsp; Status: Successfully Re-instated / Cohort 5 Live</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right" class="right-float" style="float: right; clear: both; margin-top: 6px"><tr><td bgcolor="#EBE7F0" style="background-color: #ebe7f0; border-radius: 4px; padding: 3px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; color: #494455; white-space: nowrap">REF: NC-RESUME-2027-0109</td></tr></table></div><!--[if mso]></td></tr></table><![endif]-->
+              <td
+                class="header-wrap"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 20px 32px 8px 32px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F8F1FF"
+                  style="background-color: #f8f1ff; border-radius: 16px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 16px 18px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <table
+                        class="header-row"
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            class="header-brand"
+                            colspan="2"
+                            style="
+                              padding-bottom: 8px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  valign="middle"
+                                  width="40"
+                                  style="width: 40px; padding-right: 8px"
+                                >
+                                  <img
+                                    src="img/icon-directorate.png"
+                                    width="32"
+                                    height="32"
+                                    alt="iDICE"
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 32px;
+                                      height: 32px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 10px;
+                                      line-height: 14px;
+                                      font-weight: bold;
+                                      color: #692fe5;
+                                      letter-spacing: 0.4px;
+                                    "
+                                  >
+                                    FEDERAL REPUBLIC OF NIGERIA &bull; FMCIDE
+                                    &bull;<br />AFDB &bull; BOI
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="header-main"
+                            valign="middle"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 17px;
+                                line-height: 22px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              iDICE Programme Directorate
+                            </p>
+                            <p
+                              style="
+                                margin: 2px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #494455;
+                              "
+                            >
+                              North Central Regional Hub: FCT &bull; Benue
+                              &bull; Kogi &bull; Kwara &bull; Nasarawa &bull;
+                              Niger &bull; Plateau
+                            </p>
+                          </td>
+                          <td
+                            class="header-side"
+                            width="1"
+                            valign="middle"
+                            align="right"
+                            style="
+                              width: 1px;
+                              padding-left: 16px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              white-space: nowrap;
+                              text-align: right;
+                            "
+                          >
+                            <!-- EDIT: status and reference -->
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              align="right"
+                            >
+                              <tr>
+                                <td
+                                  bgcolor="#692FE5"
+                                  style="
+                                    background-color: #692fe5;
+                                    border-radius: 999px;
+                                    padding: 6px 14px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                    white-space: nowrap;
+                                  "
+                                >
+                                  <span style="color: #ffffff">&#9679;</span
+                                  >&nbsp; Status: Successfully Re-instated /
+                                  Cohort 5 Live
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  height="8"
+                                  style="
+                                    height: 8px;
+                                    font-size: 0;
+                                    line-height: 0;
+                                  "
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="right">
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#EBE7F0"
+                                        style="
+                                          background-color: #ebe7f0;
+                                          border-radius: 4px;
+                                          padding: 3px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          color: #494455;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        REF: NC-RESUME-2027-0109
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
+
             <!-- EDIT: recipient first name -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 26px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p class="hello" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 20px; line-height: 26px; font-weight: bold; color: #1a191e;">Hello Amina,</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 26px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  class="hello"
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    color: #1a191e;
+                  "
+                >
+                  Hello Amina,
+                </p>
               </td>
             </tr>
             <!-- EDIT: cohort -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 23px; color: #3a3642;">We are pleased to welcome you back to active learning status in the <strong style="font-weight: bold; color: #692fe5">iDICE Skills-to-Jobs Programme</strong>. Following your approved transition from Cohort 4, your participant profile, cloud training sandbox, and physical hub access have been successfully provisioned for <strong style="font-weight: bold; color: #1d1a24">Cohort 5 (Stream B)</strong>.</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 8px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #3a3642;
+                  "
+                >
+                  We are pleased to welcome you back to active learning status
+                  in the
+                  <strong style="font-weight: bold; color: #692fe5"
+                    >iDICE Skills-to-Jobs Programme</strong
+                  >. Following your approved transition from Cohort 4, your
+                  participant profile, cloud training sandbox, and physical hub
+                  access have been successfully provisioned for
+                  <strong style="font-weight: bold; color: #1d1a24"
+                    >Cohort 5 (Stream B)</strong
+                  >.
+                </p>
               </td>
             </tr>
             <!-- Progress preserved -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 24px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px;"><tr><td style="padding: 18px 18px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="48" style="width: 48px"><img src="img/icon-security-purple.png" width="36" height="36" alt="" border="0" style="display: block; width: 36px; height: 36px; border: 0" /></td><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" style="padding-right: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 16px; line-height: 21px; font-weight: bold; color: #692fe5;">All Prior Progress Preserved</p></td><td valign="middle"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#824FFF" style="background-color: #824fff; border-radius: 999px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF; white-space: nowrap;">100% Credited</td></tr></table></td></tr></table><p style="margin: 5px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #494455;">Your cumulative scores from <strong style="font-weight: bold; color: #1d1a24">Milestones 1 through 5</strong> and your <strong style="font-weight: bold; color: #1d1a24">Advanced Specialist (Track Tier 1: Cloud Infrastructure &amp; Applied AI Systems)</strong> standing remain intact. No repeated prerequisites are required. You resume immediately from the live milestone sequence.</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 24px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 18px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td valign="top" width="48" style="width: 48px">
+                            <img
+                              src="img/icon-security-purple.png"
+                              width="36"
+                              height="36"
+                              alt=""
+                              border="0"
+                              style="
+                                display: block;
+                                width: 36px;
+                                height: 36px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="top"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    padding-right: 8px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0px 0 0 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 21px;
+                                      font-weight: bold;
+                                      color: #692fe5;
+                                    "
+                                  >
+                                    All Prior Progress Preserved
+                                  </p>
+                                </td>
+                                <td valign="middle">
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#824FFF"
+                                        style="
+                                          background-color: #824fff;
+                                          border-radius: 999px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          font-weight: bold;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        100% Credited
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 5px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #494455;
+                              "
+                            >
+                              Your cumulative scores from
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Milestones 1 through 5</strong
+                              >
+                              and your
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Advanced Specialist (Track Tier 1: Cloud
+                                Infrastructure &amp; Applied AI Systems)</strong
+                              >
+                              standing remain intact. No repeated prerequisites
+                              are required. You resume immediately from the live
+                              milestone sequence.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 26px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="stack" valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #494455; letter-spacing: 0.7px;">RESUMPTION PARAMETERS &amp; ACADEMIC TELEMETRY</p></td><td class="stack stack-right" valign="middle" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; color: #692fe5; text-align: right; letter-spacing: 0.4px;">AUDIT: ACTIVE-VERIFIED</p></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 26px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td
+                      class="stack"
+                      valign="middle"
+                      style="font-family: Inter, Arial, Helvetica, sans-serif"
+                    >
+                      <p
+                        style="
+                          margin: 0px 0 0 0;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          line-height: 14px;
+                          font-weight: bold;
+                          color: #7a7487;
+                          letter-spacing: 0.7px;
+                        "
+                      >
+                        RESUMPTION PARAMETERS &amp; ACADEMIC TELEMETRY
+                      </p>
+                    </td>
+                    <td
+                      class="stack stack-right"
+                      valign="middle"
+                      align="right"
+                      style="
+                        padding-left: 8px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <p
+                        style="
+                          margin: 0px 0 0 0;
+                          font-family: Inter, Arial, Helvetica, sans-serif;
+                          font-size: 10px;
+                          line-height: 14px;
+                          color: #692fe5;
+                          text-align: right;
+                          letter-spacing: 0.4px;
+                        "
+                      >
+                        AUDIT: ACTIVE-VERIFIED
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Telemetry. EDIT: cohort, milestone, hub, track lead -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 10px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px;"><tr><td style="padding: 16px 16px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Re-instated Cohort</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Cohort 5 – Stream B</p><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#EDE6FB" style="background-color: #ede6fb; border-radius: 4px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; font-weight: normal; color: #494455; white-space: nowrap;">Active Term: Jan – Mar 2027</td></tr></table></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Current Project Milestone</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #692fe5;">Milestone 6: Cloud Deployment Lab 1</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Assigned Hub Facility</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Abuja CBD Innovation Hub <span style="font-weight: normal; font-size: 11px; color: #8a8494">(Lab 5-Alpha)</span></p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="276" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 276px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF" style="background-color: #ffffff; border-radius: 8px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Assigned Track Lead</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Engr. T. O. Balogun</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table></td></tr></table>
-              </td>
-            </tr>
-            <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 26px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #494455; letter-spacing: 0.7px;">RE-ACTIVATED SOVEREIGN ENTITLEMENTS &amp; ACCESS CHECKLIST</p>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 10px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 8px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            class="eq-cell"
+                            width="50%"
+                            valign="top"
+                            height="100%"
+                            style="
+                              width: 50%;
+                              height: 0;
+                              padding: 8px;
+                              vertical-align: top;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              height="100%"
+                              bgcolor="#FFFFFF"
+                              style="
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  valign="top"
+                                  style="
+                                    padding: 14px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    text-align: left;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 11px;
+                                      line-height: 14px;
+                                      color: #494455;
+                                    "
+                                  >
+                                    Re-instated Cohort
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 4px 0 0 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 15px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1d1a24;
+                                    "
+                                  >
+                                    Cohort 5 – Stream B
+                                  </p>
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    style="margin-top: 8px"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#EDE6FB"
+                                        style="
+                                          background-color: #ede6fb;
+                                          border-radius: 4px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          color: #494455;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        Active Term: Jan – Mar 2027
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td
+                            class="eq-cell"
+                            width="50%"
+                            valign="top"
+                            height="100%"
+                            style="
+                              width: 50%;
+                              height: 0;
+                              padding: 8px;
+                              vertical-align: top;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              height="100%"
+                              bgcolor="#FFFFFF"
+                              style="
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  valign="top"
+                                  style="
+                                    padding: 14px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    text-align: left;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 11px;
+                                      line-height: 14px;
+                                      color: #494455;
+                                    "
+                                  >
+                                    Current Project Milestone
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 4px 0 0 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 15px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #692fe5;
+                                    "
+                                  >
+                                    Milestone 6: Cloud Deployment Lab 1
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="eq-cell"
+                            width="50%"
+                            valign="top"
+                            height="100%"
+                            style="
+                              width: 50%;
+                              height: 0;
+                              padding: 8px;
+                              vertical-align: top;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              height="100%"
+                              bgcolor="#FFFFFF"
+                              style="
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  valign="top"
+                                  style="
+                                    padding: 14px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    text-align: left;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 11px;
+                                      line-height: 14px;
+                                      color: #494455;
+                                    "
+                                  >
+                                    Assigned Hub Facility
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 4px 0 0 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 15px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1d1a24;
+                                    "
+                                  >
+                                    Abuja CBD Innovation Hub
+                                    <span
+                                      style="
+                                        font-weight: normal;
+                                        font-size: 11px;
+                                        color: #8a8494;
+                                      "
+                                      >(Lab 5-Alpha)</span
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td
+                            class="eq-cell"
+                            width="50%"
+                            valign="top"
+                            height="100%"
+                            style="
+                              width: 50%;
+                              height: 0;
+                              padding: 8px;
+                              vertical-align: top;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                              height="100%"
+                              bgcolor="#FFFFFF"
+                              style="
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  valign="top"
+                                  style="
+                                    padding: 14px;
+                                    font-family:
+                                      Inter, Arial, Helvetica, sans-serif;
+                                    text-align: left;
+                                  "
+                                >
+                                  <p
+                                    style="
+                                      margin: 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 11px;
+                                      line-height: 14px;
+                                      color: #494455;
+                                    "
+                                  >
+                                    Assigned Track Lead
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 4px 0 0 0;
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                      font-size: 15px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1d1a24;
+                                    "
+                                  >
+                                    Engr. T. O. Balogun
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Entitlements. EDIT: credits, desk, clinic date -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 8px 20px 0 20px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><img src="img/icon-tile-cloud-sm.png" width="32" height="32" alt="" border="0" style="display: block; width: 32px; height: 32px; border: 0" /></td><td valign="top" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF; white-space: nowrap;">Active</td></tr></table></td></tr></table><p style="margin: 10px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Refreshed Cloud Sandbox</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">$350 fresh compute credits provisioned across AWS &amp; Azure sandboxes via IAM SSO.</p><p style="margin: 10px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 10px; line-height: 14px; color: #8a8494">EXPIRY: 31 MAR 2027</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><img src="img/icon-tile-badge.png" width="32" height="32" alt="" border="0" style="display: block; width: 32px; height: 32px; border: 0" /></td><td valign="top" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF; white-space: nowrap;">Authorized</td></tr></table></td></tr></table><p style="margin: 10px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Hub Biometric Access Re-enabled</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Turnstile smart card updated at Abuja CBD Hub. Dedicated Lab station: <strong style="font-weight: bold; color: #1d1a24">Desk Allocation 5B-14</strong>.</p><p style="margin: 10px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 10px; line-height: 14px; color: #8a8494">RFID CHIP #9921-ACTIVE</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><img src="img/icon-tile-calendar.png" width="32" height="32" alt="" border="0" style="display: block; width: 32px; height: 32px; border: 0" /></td><td valign="top" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF; white-space: nowrap;">Scheduled</td></tr></table></td></tr></table><p style="margin: 10px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Updated Peer Clinic Schedule</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Cohort 5 Stream B Clinic scheduled for <strong style="font-weight: bold; color: #1d1a24">Thursday, 22 Jan 2027 at 4:00 PM WAT.</strong></p><p style="margin: 10px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 10px; line-height: 14px; color: #8a8494">ZOOM ROOM: IDICE-NC-C5B</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="300" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 300px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 10px;"><tr><td style="padding: 14px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><img src="img/icon-tile-people-purple.png" width="32" height="32" alt="" border="0" style="display: block; width: 32px; height: 32px; border: 0" /></td><td valign="top" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px; padding: 2px 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold;  color: #FFFFFF; white-space: nowrap;">Assigned</td></tr></table></td></tr></table><p style="margin: 10px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Dedicated Resumption Support</p><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Paired with a Senior Cloud Architect mentor for catch-up guidance and lab readiness review.</p><p style="margin: 10px 0 0 0; font-family: 'Courier New', Courier, monospace; font-size: 10px; line-height: 14px; color: #8a8494">1:1 ADVISOR SYNC OPEN</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 22px 20px 0 20px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0 8px 6px 8px;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 10px;
+                    line-height: 14px;
+                    font-weight: bold;
+                    color: #7a7487;
+                    letter-spacing: 0.7px;
+                  "
+                >
+                  RE-ACTIVATED SOVEREIGN ENTITLEMENTS &amp; ACCESS CHECKLIST
+                </p>
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td
+                      class="eq-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        padding: 8px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            style="
+                              padding: 14px 14px 0 14px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td valign="top">
+                                  <img
+                                    src="img/icon-tile-cloud-sm.png"
+                                    width="32"
+                                    height="32"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 32px;
+                                      height: 32px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="top"
+                                  align="right"
+                                  style="padding-left: 8px"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 999px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          font-weight: bold;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        Active
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 10px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              Refreshed Cloud Sandbox
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #494455;
+                              "
+                            >
+                              $350 fresh compute credits provisioned across AWS
+                              &amp; Azure sandboxes via IAM SSO.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="padding: 10px 14px 14px 14px"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #8a8494;
+                              "
+                            >
+                              EXPIRY: 31 MAR 2027
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="eq-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        padding: 8px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            style="
+                              padding: 14px 14px 0 14px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td valign="top">
+                                  <img
+                                    src="img/icon-tile-badge.png"
+                                    width="32"
+                                    height="32"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 32px;
+                                      height: 32px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="top"
+                                  align="right"
+                                  style="padding-left: 8px"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 999px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          font-weight: bold;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        Authorized
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 10px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              Hub Biometric Access Re-enabled
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #494455;
+                              "
+                            >
+                              Turnstile smart card updated at Abuja CBD Hub.
+                              Dedicated Lab station:
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Desk Allocation 5B-14</strong
+                              >.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="padding: 10px 14px 14px 14px"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #8a8494;
+                              "
+                            >
+                              RFID CHIP #9921-ACTIVE
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="eq-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        padding: 8px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            style="
+                              padding: 14px 14px 0 14px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td valign="top">
+                                  <img
+                                    src="img/icon-tile-calendar.png"
+                                    width="32"
+                                    height="32"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 32px;
+                                      height: 32px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="top"
+                                  align="right"
+                                  style="padding-left: 8px"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 999px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          font-weight: bold;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        Scheduled
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 10px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              Updated Peer Clinic Schedule
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #494455;
+                              "
+                            >
+                              Cohort 5 Stream B Clinic scheduled for
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Thursday, 22 Jan 2027 at 4:00 PM WAT.</strong
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="padding: 10px 14px 14px 14px"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #8a8494;
+                              "
+                            >
+                              ZOOM ROOM: IDICE-NC-C5B
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="eq-cell"
+                      width="50%"
+                      valign="top"
+                      height="100%"
+                      style="
+                        width: 50%;
+                        height: 0;
+                        padding: 8px;
+                        vertical-align: top;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        height="100%"
+                        bgcolor="#F4EFFD"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          background-color: #f4effd;
+                          border-radius: 10px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            valign="top"
+                            style="
+                              padding: 14px 14px 0 14px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                              text-align: left;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td valign="top">
+                                  <img
+                                    src="img/icon-tile-people-purple.png"
+                                    width="32"
+                                    height="32"
+                                    alt=""
+                                    border="0"
+                                    style="
+                                      display: block;
+                                      width: 32px;
+                                      height: 32px;
+                                      border: 0;
+                                    "
+                                  />
+                                </td>
+                                <td
+                                  valign="top"
+                                  align="right"
+                                  style="padding-left: 8px"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="right"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 999px;
+                                          padding: 2px 8px;
+                                          font-family:
+                                            Inter, Arial, Helvetica, sans-serif;
+                                          font-size: 10px;
+                                          line-height: 14px;
+                                          font-weight: bold;
+                                          color: #ffffff;
+                                          white-space: nowrap;
+                                        "
+                                      >
+                                        Assigned
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <p
+                              style="
+                                margin: 10px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              Dedicated Resumption Support
+                            </p>
+                            <p
+                              style="
+                                margin: 4px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #494455;
+                              "
+                            >
+                              Paired with a Senior Cloud Architect mentor for
+                              catch-up guidance and lab readiness review.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            valign="bottom"
+                            style="padding: 10px 14px 14px 14px"
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #8a8494;
+                              "
+                            >
+                              1:1 ADVISOR SYNC OPEN
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Action roadmap. EDIT: steps, deadline, button URLs -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FDF1E8" style="background-color: #fdf1e8; border-radius: 12px;"><tr><td style="padding: 20px 18px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="28" style="width: 28px"><img src="img/icon-clock-brown.png" width="18" height="18" alt="" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Immediate Action Required: Resumption Roadmap</p></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding-left: 28px"><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #3a3642;"><strong style="font-weight: bold; color: #1d1a24">Step 1:</strong> Complete 15-minute Cohort 5 Stream B Re-orientation module (opens today in portal).</p><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #3a3642;"><strong style="font-weight: bold; color: #1d1a24">Step 2:</strong> Re-test CloudShell / IAM SSO connection using your credentials.</p><p style="margin: 6px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 20px; color: #3a3642;"><strong style="font-weight: bold; color: #1d1a24">Step 3:</strong> Resume Milestone 6 Lab 1 deployment (Submission window closes: <strong style="font-weight: bold; color: #1d1a24">28 Jan 2027, 23:59 WAT</strong>).</p></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="16" style="height: 16px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="left"><tr><td valign="middle"><![endif]--><div style="display: inline-block; vertical-align: middle; margin: 4px 4px"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" bgcolor="#692FE5" style="background-color: #692fe5; border-radius: 999px"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://portal.idice-skills.gov.ng/resume" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#692FE5"><w:anchorlock/><center style="color:#ffffff;font-family:'Times New Roman',serif;font-size:14px;font-weight:bold;">Access Resumption Workspace &#8594;</center></v:roundrect><![endif]--><!--[if !mso]><!-- --><a class="cta-link" href="https://portal.idice-skills.gov.ng/resume" target="_blank" style="display: inline-block; padding: 13px 28px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 18px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 999px">Access Resumption Workspace<span style="margin-left: 8px">&#8594;</span></a><!--<![endif]--></td></tr></table></div><!--[if mso]></td><td width="12"></td><td valign="middle"><![endif]--><div style="display: inline-block; vertical-align: middle; margin: 4px 4px"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#ECE6F3" style="background-color: #ece6f3; border-radius: 999px;"><a href="https://portal.idice-skills.gov.ng/cohort-5-schedule.pdf" target="_blank" style="display: block; padding: 13px 22px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-decoration: none; color: #1d1a24"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle" width="22" style="width: 22px"><img src="img/icon-download.png" width="16" height="16" alt="" border="0" style="display: block; width: 16px; height: 16px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 14px; line-height: 18px; font-weight: bold; color: #1d1a24">Download Cohort 5 Schedule (PDF)</td></tr></table></a></td></tr></table></div><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#FDF1E8"
+                  style="background-color: #fdf1e8; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 20px 18px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td valign="middle" width="28" style="width: 28px">
+                            <img
+                              src="img/icon-clock-brown.png"
+                              width="18"
+                              height="18"
+                              alt=""
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              Immediate Action Required: Resumption Roadmap
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td style="padding-left: 28px">
+                            <p
+                              style="
+                                margin: 6px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #3a3642;
+                              "
+                            >
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Step 1:</strong
+                              >
+                              Complete 15-minute Cohort 5 Stream B
+                              Re-orientation module (opens today in portal).
+                            </p>
+                            <p
+                              style="
+                                margin: 6px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #3a3642;
+                              "
+                            >
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Step 2:</strong
+                              >
+                              Re-test CloudShell / IAM SSO connection using your
+                              credentials.
+                            </p>
+                            <p
+                              style="
+                                margin: 6px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #3a3642;
+                              "
+                            >
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >Step 3:</strong
+                              >
+                              Resume Milestone 6 Lab 1 deployment (Submission
+                              window closes:
+                              <strong style="font-weight: bold; color: #1d1a24"
+                                >28 Jan 2027, 23:59 WAT</strong
+                              >).
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            height="16"
+                            style="height: 16px; font-size: 0; line-height: 0"
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td align="center" style="text-align: center">
+                            <table
+                              class="cta-row"
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              align="center"
+                            >
+                              <tr>
+                                <td
+                                  class="cta-btn"
+                                  align="center"
+                                  valign="middle"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="center"
+                                  >
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        bgcolor="#692FE5"
+                                        style="
+                                          background-color: #692fe5;
+                                          border-radius: 999px;
+                                        "
+                                      >
+                                        <!--[if mso
+                                          ]><v:roundrect
+                                            xmlns:v="urn:schemas-microsoft-com:vml"
+                                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                                            href="https://portal.idice-skills.gov.ng/resume"
+                                            style="
+                                              height: 44px;
+                                              v-text-anchor: middle;
+                                              width: 280px;
+                                            "
+                                            arcsize="50%"
+                                            stroke="f"
+                                            fillcolor="#692FE5"
+                                            ><w:anchorlock />
+                                            <center
+                                              style="
+                                                color: #ffffff;
+                                                font-family:
+                                                  Arial, Helvetica, sans-serif;
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                              "
+                                            >
+                                              Access Resumption Workspace
+                                              &#8594;
+                                            </center></v:roundrect
+                                          ><!
+                                        [endif]-->
+                                        <!--[if !mso]><!-- --><a
+                                          class="cta-link"
+                                          href="https://portal.idice-skills.gov.ng/resume"
+                                          target="_blank"
+                                          style="
+                                            display: inline-block;
+                                            padding: 13px 28px;
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            font-weight: bold;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                            border-radius: 999px;
+                                          "
+                                          >Access Resumption Workspace<span
+                                            style="margin-left: 8px"
+                                            >&#8594;</span
+                                          ></a
+                                        ><!--<![endif]-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td
+                                  class="cta-gap"
+                                  width="16"
+                                  style="
+                                    width: 16px;
+                                    font-size: 0;
+                                    line-height: 0;
+                                  "
+                                >
+                                  &nbsp;
+                                </td>
+                                <td
+                                  class="cta-btn"
+                                  align="center"
+                                  valign="middle"
+                                >
+                                  <table
+                                    role="presentation"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    align="center"
+                                  >
+                                    <tr>
+                                      <td
+                                        bgcolor="#ECE6F3"
+                                        style="
+                                          background-color: #ece6f3;
+                                          border-radius: 999px;
+                                        "
+                                      >
+                                        <a
+                                          href="https://portal.idice-skills.gov.ng/cohort-5-schedule.pdf"
+                                          target="_blank"
+                                          style="
+                                            display: block;
+                                            padding: 13px 22px;
+                                            font-family:
+                                              Inter, Arial, Helvetica,
+                                              sans-serif;
+                                            text-decoration: none;
+                                            color: #1d1a24;
+                                          "
+                                        >
+                                          <table
+                                            role="presentation"
+                                            border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                          >
+                                            <tr>
+                                              <td
+                                                valign="middle"
+                                                width="22"
+                                                style="width: 22px"
+                                              >
+                                                <img
+                                                  src="img/icon-download.png"
+                                                  width="16"
+                                                  height="16"
+                                                  alt=""
+                                                  border="0"
+                                                  style="
+                                                    display: block;
+                                                    width: 16px;
+                                                    height: 16px;
+                                                    border: 0;
+                                                  "
+                                                />
+                                              </td>
+                                              <td
+                                                valign="middle"
+                                                style="
+                                                  font-family:
+                                                    Inter, Arial, Helvetica,
+                                                    sans-serif;
+                                                  font-size: 14px;
+                                                  line-height: 18px;
+                                                  font-weight: bold;
+                                                  color: #1d1a24;
+                                                "
+                                              >
+                                                Download Cohort 5 Schedule (PDF)
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Attendance notice. EDIT: sector and hours -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 0 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px"><tr><td style="padding: 16px 16px; font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><td width="160" valign="middle"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 160px; vertical-align: middle"><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="padding: 4px 16px 4px 0"><!-- BACKEND: replace with a real static map of the hub (e.g. 280x208 PNG, shown at 140x104). Keep width/height attributes. --><img src="img/map-hub-placeholder.png" width="140" height="104" alt="Map: Abuja CBD Innovation Hub" border="0" style="display: block; width: 140px; height: 104px; border: 0; border-radius: 8px" /></td></tr></table></div><!--[if mso]></td><td width="392" valign="middle"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 392px; vertical-align: middle"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px 0; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="middle" width="22" style="width: 22px"><img src="img/icon-pin.png" width="16" height="16" alt="" border="0" style="display: block; width: 16px; height: 16px; border: 0" /></td><td valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 15px; line-height: 20px; font-weight: bold; color: #1d1a24;">Physical In-Hub Attendance Notice</p></td></tr></table><p style="margin: 4px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 18px; color: #494455;">Your workstation in Sector 5B is reserved with gigabit fiber and backup power. Physical attendance hours remain Monday – Friday, 08:30 to 17:00 WAT. In-person check-in is optional for remote track learners, but recommended for Friday Sprint Clinics.</p></td></tr></table></div><!--[if mso]></td></tr></table><![endif]--></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 0 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="padding: 16px 16px; font-size: 0; text-align: left"
+                    >
+                      <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="552"><tr><td width="160" valign="middle"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 160px;
+                          vertical-align: middle;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                        >
+                          <tr>
+                            <td style="padding: 4px 16px 4px 0">
+                              <!-- BACKEND: replace with a real static map of the hub (e.g. 280x208 PNG, shown at 140x104). Keep width/height attributes. --><img
+                                src="img/map-hub-placeholder.png"
+                                width="140"
+                                height="104"
+                                alt="Map: Abuja CBD Innovation Hub"
+                                border="0"
+                                style="
+                                  display: block;
+                                  width: 140px;
+                                  height: 104px;
+                                  border: 0;
+                                  border-radius: 8px;
+                                "
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td><td width="392" valign="middle"><![endif]-->
+                      <div
+                        class="stack"
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 392px;
+                          vertical-align: middle;
+                        "
+                      >
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td style="padding: 4px 0; text-align: left">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td
+                                    valign="middle"
+                                    width="22"
+                                    style="width: 22px"
+                                  >
+                                    <img
+                                      src="img/icon-pin.png"
+                                      width="16"
+                                      height="16"
+                                      alt=""
+                                      border="0"
+                                      style="
+                                        display: block;
+                                        width: 16px;
+                                        height: 16px;
+                                        border: 0;
+                                      "
+                                    />
+                                  </td>
+                                  <td
+                                    valign="middle"
+                                    style="
+                                      font-family:
+                                        Inter, Arial, Helvetica, sans-serif;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        margin: 0px 0 0 0;
+                                        font-family:
+                                          Inter, Arial, Helvetica, sans-serif;
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                        font-weight: bold;
+                                        color: #1d1a24;
+                                      "
+                                    >
+                                      Physical In-Hub Attendance Notice
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                              <p
+                                style="
+                                  margin: 4px 0 0 0;
+                                  font-family:
+                                    Inter, Arial, Helvetica, sans-serif;
+                                  font-size: 12px;
+                                  line-height: 18px;
+                                  color: #494455;
+                                "
+                              >
+                                Your workstation in Sector 5B is reserved with
+                                gigabit fiber and backup power. Physical
+                                attendance hours remain Monday – Friday, 08:30
+                                to 17:00 WAT. In-person check-in is optional for
+                                remote track learners, but recommended for
+                                Friday Sprint Clinics.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- Record. EDIT: candidate details and hash -->
             <tr>
-              <td class="px" bgcolor="#FFFFFF" style="background-color: #ffffff; padding: 18px 24px 28px 24px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4EFFD" style="background-color: #f4effd; border-radius: 12px;"><tr><td style="padding: 16px 14px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="font-size: 0; text-align: left"><!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="556"><tr><![endif]--><!--[if mso]><td width="278" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 278px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 4px 0 0"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #8a8494; letter-spacing: 0.3px;">Candidate Name</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">Amina Zainab Bello</p></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 4px"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #8a8494; letter-spacing: 0.3px;">Participant ID</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">NC-FCT-2026-8812</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]><td width="278" valign="top"><![endif]--><div class="stack" style="display: inline-block; width: 100%; max-width: 278px; vertical-align: top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="padding: 4px; text-align: left"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed"><tr><td width="50%" valign="top" style="width: 50%; padding: 0 4px 0 0"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #8a8494; letter-spacing: 0.3px;">Re-instatement Authority</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">Directorate of Admissions</p></td><td width="50%" valign="top" style="width: 50%; padding: 0 0 0 4px"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #8a8494; letter-spacing: 0.3px;">Assigned Hub</p><p style="margin: 3px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 18px; font-weight: bold; color: #1d1a24;">FCT (Abuja CBD)</p></td></tr></table></td></tr></table></div><!--[if mso]></td><![endif]--><!--[if mso]></tr></table><![endif]--></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="height: 10px; font-size: 0; line-height: 0">&nbsp;</td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="stack" valign="middle" style="font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 11px; line-height: 16px; color: #8a8494; word-break: break-all">SHA256: 4e91b820a69d71c08fe4022a19b883017cb03452resume-c5</p></td><td class="stack stack-right" valign="middle" align="right" style="padding-left: 8px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 10px; line-height: 14px; font-weight: bold; color: #692fe5; text-align: right; letter-spacing: 0.4px;">SOVEREIGN TRUST SEAL VERIFIED</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#FFFFFF"
+                style="
+                  background-color: #ffffff;
+                  padding: 18px 24px 28px 24px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  bgcolor="#F4EFFD"
+                  style="background-color: #f4effd; border-radius: 12px"
+                >
+                  <tr>
+                    <td
+                      style="
+                        padding: 16px 14px;
+                        font-family: Inter, Arial, Helvetica, sans-serif;
+                        text-align: left;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td style="font-size: 0; text-align: left">
+                            <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="556"><tr><!
+                            [endif]-->[endif]--><!--[if mso]><td width="278" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 278px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 4px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="table-layout: fixed"
+                                    >
+                                      <tr>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 4px 0 0"
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #8a8494;
+                                              letter-spacing: 0.3px;
+                                            "
+                                          >
+                                            Candidate Name
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Amina Zainab Bello
+                                          </p>
+                                        </td>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 0 0 4px"
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #8a8494;
+                                              letter-spacing: 0.3px;
+                                            "
+                                          >
+                                            Participant ID
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            NC-FCT-2026-8812
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]><td width="278" valign="top"><![endif]-->
+                            <div
+                              class="stack"
+                              style="
+                                display: inline-block;
+                                width: 100%;
+                                max-width: 278px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tr>
+                                  <td style="padding: 4px; text-align: left">
+                                    <table
+                                      role="presentation"
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="table-layout: fixed"
+                                    >
+                                      <tr>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 4px 0 0"
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #8a8494;
+                                              letter-spacing: 0.3px;
+                                            "
+                                          >
+                                            Re-instatement Authority
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            Directorate of Admissions
+                                          </p>
+                                        </td>
+                                        <td
+                                          width="50%"
+                                          valign="top"
+                                          style="width: 50%; padding: 0 0 0 4px"
+                                        >
+                                          <p
+                                            style="
+                                              margin: 0px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              color: #8a8494;
+                                              letter-spacing: 0.3px;
+                                            "
+                                          >
+                                            Assigned Hub
+                                          </p>
+                                          <p
+                                            style="
+                                              margin: 3px 0 0 0;
+                                              font-family:
+                                                Inter, Arial, Helvetica,
+                                                sans-serif;
+                                              font-size: 11px;
+                                              line-height: 14px;
+                                              font-weight: 600;
+                                              color: #1d1a24;
+                                            "
+                                          >
+                                            FCT (Abuja CBD)
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <!--[if mso]></td><!
+                            [endif]-->[endif]--><!--[if mso]></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            height="10"
+                            style="height: 10px; font-size: 0; line-height: 0"
+                          >
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            class="stack"
+                            valign="middle"
+                            style="
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0;
+                                font-family:
+                                  &quot;Courier New&quot;, Courier, monospace;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #7a7487;
+                                word-break: break-all;
+                              "
+                            >
+                              SHA256:
+                              4e91b820a69d71c08fe4022a19b883017cb03452resume-c5
+                            </p>
+                          </td>
+                          <td
+                            class="stack stack-right"
+                            valign="middle"
+                            align="right"
+                            style="
+                              padding-left: 8px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: bold;
+                                color: #692fe5;
+                                text-align: right;
+                                letter-spacing: 0.4px;
+                              "
+                            >
+                              SOVEREIGN TRUST SEAL VERIFIED
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <!-- ===================== FOOTER ===================== -->
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 22px 16px 8px 16px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto"><tr><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-fmcide.png" width="18" height="18" alt="FMCIDE" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">FMCIDE</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Federal Government</p></td></tr></table></td><td width="28" style="width: 28px; font-size: 0; line-height: 0">&nbsp;</td><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-afdb.png" width="18" height="18" alt="AFDB" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">AFDB</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Co-Financing Partner</p></td></tr></table></td><td width="28" style="width: 28px; font-size: 0; line-height: 0">&nbsp;</td><td valign="middle" align="center"><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td valign="middle" width="24" style="width: 24px"><img src="img/icon-boi.png" width="18" height="18" alt="BOI" border="0" style="display: block; width: 18px; height: 18px; border: 0" /></td><td valign="middle" style="padding-left: 4px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif"><p class="partner-name" style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 12px; line-height: 15px; font-weight: bold; color: #1d1a24;">BOI</p><p class="partner-role" style="margin: 1px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 14px; color: #494455;">Implementation Agency</p></td></tr></table></td></tr></table>
+              <td
+                class="px"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 22px 16px 8px 16px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <table
+                  role="presentation"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="margin: 0 auto"
+                >
+                  <tr>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-fmcide.png"
+                              width="18"
+                              height="18"
+                              alt="FMCIDE"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              FMCIDE
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Federal Government
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      width="28"
+                      style="width: 28px; font-size: 0; line-height: 0"
+                    >
+                      &nbsp;
+                    </td>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-afdb.png"
+                              width="18"
+                              height="18"
+                              alt="AFDB"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              AFDB
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Co-Financing Partner
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      width="28"
+                      style="width: 28px; font-size: 0; line-height: 0"
+                    >
+                      &nbsp;
+                    </td>
+                    <td valign="middle" align="center">
+                      <table
+                        role="presentation"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tr>
+                          <td valign="middle" width="24" style="width: 24px">
+                            <img
+                              src="img/icon-boi.png"
+                              width="18"
+                              height="18"
+                              alt="BOI"
+                              border="0"
+                              style="
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                border: 0;
+                              "
+                            />
+                          </td>
+                          <td
+                            valign="middle"
+                            style="
+                              padding-left: 4px;
+                              font-family: Inter, Arial, Helvetica, sans-serif;
+                            "
+                          >
+                            <p
+                              class="partner-name"
+                              style="
+                                margin: 0px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 12px;
+                                line-height: 15px;
+                                font-weight: bold;
+                                color: #1d1a24;
+                              "
+                            >
+                              BOI
+                            </p>
+                            <p
+                              class="partner-role"
+                              style="
+                                margin: 1px 0 0 0;
+                                font-family:
+                                  Inter, Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 14px;
+                                color: #494455;
+                              "
+                            >
+                              Implementation Agency
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
-              <td class="px" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 16px 22px 0 22px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 13px; line-height: 19px; color: #494455; text-align: center;">Need assistance? Email us at <a href="mailto:support@idice-skills.gov.ng" style="color: #6651a1; text-decoration: underline">support@idice-skills.gov.ng</a> or visit the regional knowledge base.</p>
+              <td
+                class="px"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 16px 22px 0 22px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #494455;
+                    text-align: center;
+                  "
+                >
+                  Need assistance? Email us at
+                  <a
+                    href="mailto:support@idice-skills.gov.ng"
+                    style="color: #6651a1; text-decoration: underline"
+                    >support@idice-skills.gov.ng</a
+                  >
+                  or visit the regional knowledge base.
+                </p>
               </td>
             </tr>
             <tr>
-              <td class="px" align="center" bgcolor="#F8F1FF" style="background-color: #f8f1ff; padding: 8px 28px 22px 28px; border-radius: 0 0 18px 18px; font-family: 'Liberation Serif', 'Times New Roman', Times, serif">
-                <p style="margin: 0px 0 0 0; font-family: 'Liberation Serif', 'Times New Roman', Times, serif; font-size: 11px; line-height: 16px; color: #8a8494; text-align: center;">This is an automated dispatch from the iDICE North Central Candidate Management System. Please do not reply directly to this notification address.</p>
+              <td
+                class="px"
+                align="center"
+                bgcolor="#F8F1FF"
+                style="
+                  background-color: #f8f1ff;
+                  padding: 8px 28px 22px 28px;
+                  border-radius: 0 0 18px 18px;
+                  font-family: Inter, Arial, Helvetica, sans-serif;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px 0 0 0;
+                    font-family: Inter, Arial, Helvetica, sans-serif;
+                    font-size: 11px;
+                    line-height: 16px;
+                    color: #8a8494;
+                    text-align: center;
+                  "
+                >
+                  This is an automated dispatch from the iDICE North Central
+                  Candidate Management System. Please do not reply directly to
+                  this notification address.
+                </p>
               </td>
             </tr>
           </table>
